@@ -1,0 +1,13 @@
+#top {
+    text-align: center;
+    margin: 16px;
+}
+
+#navigation {
+    padding: 8px;
+}
+
+#navigation a:hover{
+    color: white;
+    background-color: grey;
+}
