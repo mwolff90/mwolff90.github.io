@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
     margin: 0;
 }
 
@@ -12,6 +20,9 @@ body {
     color: black;
     display: inline;
     font-size: 50px;
+}
+#logo-name {
+    padding: 10px;
 }
 
 #navigation {
@@ -61,4 +72,55 @@ body {
   
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  li,a,button {
+    color: whitesmoke;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: darkblue;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  .nav__links {
+    list-style: none;
+  }
+
+  .nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+
+  .nav__links li a:hover {
+    color: cadetblue;
+  }
+
+  /* button {
+    padding: 9px 25px;
+    background-color: rgba(85,85,85,1);
+  } */
+
+ .cta {
+    padding: 9px 25px;
+    background-color: rgba(85,85,85,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+
+  .cta:hover {
+    background-color: rgba(85,85,85,0.8);
   }
