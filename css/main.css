@@ -11,11 +11,15 @@ body {
 #logo {
     color: black;
     display: inline;
-    font-size: 90px;
+    font-size: 50px;
 }
 
 #navigation {
     padding: 8px;
+}
+
+#navigation a {
+    padding: 15px;
 }
 
 #navigation a:hover{
