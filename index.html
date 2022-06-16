@@ -9,12 +9,14 @@
     <script src='main.js'></script>
 </head>
 <body>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div id="top"> 
         <div id="logo">
-
+            MWolff90
         </div>
         <div id="logo-name">
-
+            Data Science | DevOps
         </div>
         <div id="navigation">
             <a href="#about">About me</a>
@@ -29,7 +31,15 @@
     <div id="main">
         <section id="about">
             <h2>About Me</h2> 
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+            <p>Hi, <br>
+                my name is Markus Wolff. I'm a professional Programmer/ Data Scientist & DevOps engineer from Germany. <br>
+                I've started programming in C++ during middle school about 1 year before I started my IT apprenticeship @Genossenschaftsverband_Bayern from 2007 to 2009. <br>
+                During which I discovered a drive to analyse data, at that time just using Java to wrangle data dumps from the databases. <br>
+                During and after finishing my B.Sc. in Computer Science @University_of_Applied:Sciences_Rosenheim, I've been able to apply my knowledge @ Deloitte Germany by supporting the Risk Advisory team until 2017. <br>
+            </p> 
+            <p>In hindsight, leaving the great team there was surely my biggest mistake careerwise, but I moved on to @University_of_Salzburg learn more about Data Science. The mainly mathematical and theoretical appoach to real world problems just didn't really fit with me, so I moved on to foreign waters. <br>
+                I wanted to apply myself in ways, I've never before thought about, by supporting @Schoen_Klinik_SE as DevOps-Engineer and Technical Application Manager. 
+            </p>
         </section>
         <section id="projects">
             <h2>Projects</h2> 
@@ -47,5 +57,29 @@
     <div id="footer">
         Copyright MWolff 2022 | <a href="#contact">Impressum</a>
     </div>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
 </body>
 </html>
